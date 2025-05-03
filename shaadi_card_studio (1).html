@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaadi Card Studio</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff8f0; color: #333; }
+    header { background: linear-gradient(to right, #ffb347, #ffcc33); padding: 40px; text-align: center; color: white; position: relative; }
+    header h1 { margin: 0; font-size: 48px; }
+    header .designer-name { position: absolute; top: 20px; right: 20px; font-size: 16px; background: rgba(0,0,0,0.3); padding: 6px 12px; border-radius: 8px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; }
+    .gallery video, .gallery img { width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .pricing { background: #fff3e0; padding: 40px; text-align: center; }
+    .pricing h2 { margin-bottom: 20px; }
+    .pricing p { font-size: 24px; font-weight: bold; }
+    .contact { padding: 40px; text-align: center; }
+    .contact input, .contact textarea { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; }
+    .contact button { background: #ffb347; border: none; padding: 12px 24px; color: white; font-size: 18px; border-radius: 8px; cursor: pointer; }
+    .contact button:hover { background: #ffcc33; }
+    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50%; text-decoration: none; font-size: 24px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+    footer { background: #333; color: #fff; text-align: center; padding: 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaadi Card Studio</h1>
+    <div class="designer-name">Designed by Jay Kumar</div>
+    <p>Beautiful Digital Wedding Invitations</p>
+  </header>
+
+  <section class="gallery">
+    <video controls src="sample1.mp4"></video>
+    <img src="sample1.jpg" alt="Sample Card 1">
+    <video controls src="sample2.mp4"></video>
+    <img src="sample2.jpg" alt="Sample Card 2">
+    <!-- Add more videos or photos as needed -->
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <p>₹200 – ₹300 per card</p>
+    <p>Contact us for custom designs!</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea><br>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <a class="whatsapp-btn" href="https://wa.me/919999999999" target="_blank">&#128222;</a>
+
+  <footer>
+    &copy; 2025 Shaadi Card Studio. All rights reserved.
+  </footer>
+</body>
+</html>
